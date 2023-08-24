@@ -53,9 +53,13 @@ second_number = input("second number: ")
 # print(first_number + second_number)
 
 print(int(first_number) + int(second_number))
+## esto es nuevo
+## esto tambien es nuevo
 
 ## python -m venv env  Creación de un entorno virtual 
 ## Line from developer to main.
 print(int(first_number) + int(second_number)) ## this line come from developer
-## python -m venv env  Creación de un entorno virtual  ## Come from branch designer
-print(int(first_number) + int(second_number))
+## python -m venv env  Creación de un entorno virtual  ## Come from branch designer_rrrr 
+print(int(second_number) + int(first_number))
+ ##viene de designer branch
+## Esto si es nuevo
