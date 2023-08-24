@@ -43,6 +43,7 @@ print(str(parsecs) + "parsecs is" + str(lightyears) + "lightyears")
 
 print("Welcome to the greeter program line 43 from designer")
 print("New line 44 from designer")
+print("New line 45 from designer")
 name = input("Enter your name: ")
 print("Greetings " + name)
 
@@ -50,7 +51,7 @@ print("Greetings " + name)
 
 print("calculator program line 49 new from designer") 
 first_number = input("first number: ")
-second_number = input("second number: ")
+second_number = input("second numbar: ")
 # print(first_number + second_number)
 
 print(int(first_number) + int(second_number))
@@ -61,6 +62,7 @@ print(int(first_number) + int(second_number))
 ## Line from developer to main.
 print(int(first_number) + int(second_number)) ## this line come from developer
 ## python -m venv env  Creación de un entorno virtual  ## Come from branch designer_rrrr 
+
 print(int(second_number) + int(first_number))
- ##viene de designer branch
-## Esto si es nuevo
+
+
