@@ -41,13 +41,14 @@ lightyears = parsecs * 3.26
 print(str(parsecs) + "parsecs is" + str(lightyears) + "lightyears")
 
 
-print("Welcome to the greeter program")
+print("Welcome to the greeter program line 43 from designer")
+print("New line 44 from designer")
 name = input("Enter your name: ")
 print("Greetings " + name)
 
 
 
-print("calculator program")
+print("calculator program line 49 new from designer") 
 first_number = input("first number: ")
 second_number = input("second number: ")
 # print(first_number + second_number)
