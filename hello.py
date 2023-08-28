@@ -2,6 +2,9 @@
 
 print ('Hello Jay')
 print ('This is only one test of python')
+print ('This was made from designer branch')
+
+
 print ("This was made from developer branch")
 sum = 1 + 2
 print(sum)
@@ -38,20 +41,30 @@ lightyears = parsecs * 3.26
 print(str(parsecs) + "parsecs is" + str(lightyears) + "lightyears")
 
 
-print("Welcome to the greeter program")
+print("Welcome to the greeter program line 43 from designer")
+print("New line 44 from designer")
+print("New line 45 from designer")
 name = input("Enter your name: ")
 print("Greetings " + name)
 
 
 
-print("calculator program")
+print("calculator program line 49 new from designer") 
 first_number = input("first number: ")
+
 second_number = input("secondd number: ")
 alpha_number = input("second number:") ## come to local-developer 280823
 # print(first_number + second_number)
 
 print(int(first_number) + int(second_number))
+## esto es nuevo
+## esto tambien es nuevo
 
 ## python -m venv env  Creación de un entorno virtual 
 ## Line from developer to main.
 print(int(first_number) + int(second_number)) ## this line come from developer
+## python -m venv env  Creación de un entorno virtual  ## Come from branch designer_rrrr 
+
+print(int(second_number) + int(first_number))
+
+

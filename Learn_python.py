@@ -634,6 +634,7 @@ yy = numpy.std(speed2)
 print(yy)
 
 
+
 speed1 = [32,111,138,28,59,77,97]
 x1 = numpy.var(speed)
 print(x1)
@@ -645,6 +646,7 @@ print(x2)
 ages = [5,31,43,48,50,41,7,11,15,39,80,82,32,2,8,6,25,36,27,61,31]
 x = numpy.percentile(ages, 75)
 print(x)
+
 
 x = numpy.percentile(ages, 90)
 print(x)
