@@ -51,7 +51,9 @@ print("Greetings " + name)
 
 print("calculator program line 49 new from designer") 
 first_number = input("first number: ")
-second_number = input("second numbar: ")
+
+second_number = input("secondd number: ")
+alpha_number = input("second number:") ## come to local-developer 280823
 # print(first_number + second_number)
 
 print(int(first_number) + int(second_number))
