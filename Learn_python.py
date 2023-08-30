@@ -733,9 +733,125 @@ print('=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-')
 
 # https://www.w3schools.com/spaces/index.php
 
-print('=-=-=-=-=-=-=-=-=-=-Multiple Regresion=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-')
+print('=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-')
+
+print('=-=-=-=-=-=-=-=-=-=-Python and Mysql=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-')
 
 
+
+
+##  Install conecction of MySQL Connector
+##  python -m pip install mysql-connector-python
+
+import mysql.connector 
+
+mydb = mysql.connector.connect(
+   host="localhost",
+   user="root",
+   password="",
+   database="mydatabase"
+)
+
+print(mydb)
+
+## To create a database in MySQL, use the "CREATE DATABASE" statement:
+#  mycursor = mydb.cursor()
+#  mycursor.execute("CREATE DATABASE mydatabase")
+
+mycursor = mydb.cursor()
+mycursor.execute("SHOW DATABASES")
+
+for x in mycursor:
+   print(x)
+
+   
+######executed sucessfully###############
+## mycursor = mydb.cursor()
+## mycursor.execute("CREATE TABLE customers (name VARCHAR(255), address VARCHAR(255))")
+####################
+
+######executed sucessfully###############
+## mycursor = mydb.cursor()
+## mycursor.execute("CREATE TABLE customers1 (id INT AUTO_INCREMENT PRIMARY KEY, name VARCHAR(255), address VARCHAR(255))")
+####################
+
+######executed sucessfully###############
+## mycursor = mydb.cursor()
+## mycursor.execute("ALTER TABLE customers ADD COLUMN id INT AUTO_INCREMENT PRIMARY KEY")
+####################
+
+
+######executed sucessfully###############
+## mycursor = mydb.cursor()
+## sql = "INSERT INTO customers (name, address) VALUES (%s, %s)"
+## val = ("John", "Highway 21")
+## mycursor.execute(sql, val)
+## mydb.commit()
+## print(mycursor.rowcount, "record inserted.")
+####################
+
+######executed sucessfully###############
+## mycursor = mydb.cursor()
+
+## sql = "INSERT INTO customers (name, address) VALUES (%s, %s)"
+## val = [
+##  ('Peter', 'Lowstreet 4'),
+##  ('Amy', 'Apple st 652'),
+##  ('Hannah', 'Mountain 21'),
+##  ('Michael', 'Valley 345'),
+##  ('Sandy', 'Ocean blvd 2'),
+##  ('Betty', 'Green Grass 1'),
+##  ('Richard', 'Sky st 331'),
+##  ('Susan', 'One way 98'),
+##  ('Vicky', 'Yellow Garden 2'),
+##  ('Ben', 'Park Lane 38'),
+##  ('William', 'Central st 954'),
+##  ('Chuck', 'Main Road 989'),
+##  ('Viola', 'Sideway 1633')
+##]
+
+## mycursor.executemany(sql, val)
+
+## mydb.commit()
+
+## print(mycursor.rowcount, "was inserted.")
+####################
+
+
+
+######executed sucessfully###############
+## mycursor = mydb.cursor()
+
+## sql = "INSERT INTO customers (name, address) VALUES (%s, %s)"
+## val = ("Michelle", "Blue Village")
+## mycursor.execute(sql, val)
+
+## mydb.commit()
+
+## print("1 record inserted, ID:", mycursor.lastrowid)
+####################
+
+
+
+######executed sucessfully###############
+# mycursor = mydb.cursor()
+# mycursor.execute("SELECT * FROM customers WHERE id > 5")
+# myresult = mycursor.fetchall()
+
+# for x in myresult:
+#   print(x)
+####################
+
+
+mycursor = mydb.cursor()
+
+sql = "UPDATE customers SET address = 'Canyon 123567' WHERE id = '5'"
+
+mycursor.execute(sql)
+
+mydb.commit()
+
+print(mycursor.rowcount, "record(s) affected")
 
 
 
